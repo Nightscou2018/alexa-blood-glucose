@@ -38,7 +38,7 @@ const GlucoseIntentHandler = {
         headers: {
             'Accept': 'application/json',
             'Accept-Charset': 'utf-8',
-            'User-Agent': 'Dexcom Alexa Skill'
+            'User-Agent': 'Dexcom Alexa Skill Handler'
         }
     };
 
