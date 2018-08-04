@@ -30,8 +30,8 @@ const GlucoseIntentHandler = {
   },
   handle(handlerInput) {
     const speechText = 'Glucose intent';
-    const request = require('request');
-
+    var request = require("request")
+    
     const options = {  
         url: 'http://ryandellolio.herokuapp.com/api/v1/entries.json?count=1',
         method: 'GET',
@@ -46,7 +46,6 @@ const GlucoseIntentHandler = {
         let json = JSON.parse(body);
         console.log(json);
     });
-
     return handlerInput.responseBuilder
       .speak(speechText)
       .withSimpleCard(SpotTitle, speechText)
